@@ -1,0 +1,36 @@
+{
+  "name": "babasin ureyi 🙀",
+  "description": "Telegram bot that takes screenshot of webpages",
+  "keywords": [
+    "telegram",
+    "web page",
+    "screenshot"
+  ],
+  "website": "https://aahnik.github.io",
+  "repository": "https://github.com/babas2/fotokopiM",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1024px-Telegram_logo.svg.png",
+
+  "buildpacks": [
+    {
+      "url":"https://github.com/heroku/heroku-buildpack-python.git"
+    },
+    {"url":"https://github.com/jontewks/puppeteer-heroku-buildpack"}
+  ],
+
+  "env": {
+    "API_ID": {
+      "description": "The API ID obtained from https://my.telegram.org/auth",
+      "value":"1225523"
+    },
+    "API_HASH": {
+      "description": "The API_HASH obtained from https://my.telegram.org/auth",
+      "value": "ec0ae6e668e4eaa669c536acf13c9f59"
+    },
+    "BOT_TOKEN":{
+        "description": "Put your BOT token obtained from BotFather",
+        "value": ""
+    }
+
+  }
+
+}
